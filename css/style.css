@@ -1,0 +1,219 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300, 500';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #25aae1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    color: rgba(0, 0, 0, 84);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    color: #505050;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+/*Nepanime Logo Area*/
+
+.logo-area {
+    margin-top: 35px;
+    background: #f6f6f6;
+    height: 62px;
+    border-bottom: 1px solid #111111;
+}
+
+.logo-holder {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.logo-area img {
+    width: 200px;
+}
+
+/*Timer Holder*/
+
+.timer-holder {
+    margin-top: -1px;
+}
+
+.timer-holder .first {
+    border-right: 3px solid #f6f6f6;
+    height: 41px;
+}
+
+.timer-holder .second {
+    border-left: 3px solid #f6f6f6;
+    height: 41px;
+}
+
+/*Timer Box*/
+
+.timer-wrapper .timer-box {
+    background: #f6f6f6;
+}
+
+.timer, .days, .hours, .minutes, .seconds {
+    font-weight: 300;
+    height: inherit;
+    line-height: 35px;
+    font-size: 34px;
+    color: #383838;
+    padding: 0;
+    text-align: center;
+    margin-bottom: -1px;
+}
+
+.days {
+    /*background: red;*/
+}
+
+.hours {
+    /*background: blue;*/
+}
+
+.minutes {
+    /*background: green;*/
+}
+
+.seconds {
+}
+
+.timer-text {
+    background: #f6f6f6;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6px;
+    color: #999999;
+    padding-bottom: 2px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/*Rocket Logo Area*/
+
+.rocket-logo-wrapper {
+    margin: 30px 0;
+}
+
+.rocket-logo-wrapper img {
+    width: 195px;
+}
+
+/*Text and social media icon*/
+
+.text-info {
+    margin: 0 5px;
+}
+
+.text-info p {
+    font-size: 14px;
+    color: #f6f6f6;
+}
+
+.message {
+    font-weight: 300;
+}
+
+.message-bold {
+    font-weight: 500;
+}
+
+.social-media a {
+    color: #f6f6f6;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .rocket-logo-wrapper {
+        margin: 60px 0;
+    }
+
+    .timer-text {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .timer-holder .first, .timer-holder .second {
+        height: 60px;
+    }
+
+    .timer, .days, .hours, .minutes, .seconds {
+        line-height: 47px;
+    }
+
+    .rocket-logo-wrapper img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .timer-holder .first, .timer-holder .second {
+        height: 80px;
+    }
+
+    .rocket-logo-wrapper img {
+        width: 300px;
+    }
+
+    .rocket-logo-wrapper {
+        margin: 80px 0;
+    }
+}
